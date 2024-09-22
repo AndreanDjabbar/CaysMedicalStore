@@ -59,7 +59,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'MedicalStore.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATES = [
     {
@@ -77,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'MedicalStore.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database

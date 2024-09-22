@@ -3,7 +3,7 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
-from . import views
+from views import authenticate_redirection
 
 urlpatterns = [
     path(
@@ -14,7 +14,7 @@ urlpatterns = [
         "authentication/",
         include("authentication.urls", namespace="authentication")
     ),
-    path("", views.authenticate_redirection),
+    path("", authenticate_redirection),
     path('admin/', admin.site.urls),
 ]
 
