@@ -24,7 +24,7 @@
                         {% if profiles.profile_image %}
                             <img src="{{ profiles.profile_image.url }}" alt="Profile Image" class="profile-image img-fluid rounded-circle" style="margin-bottom: 50px; margin-top: 50px; width: 330px; height: 330px;">
                             {% else %}
-                            <img src="" alt="Profile Image" class="profile-image img-fluid rounded-circle" style="margin-bottom: 50px; margin-top: 50px; width: 330px; height: 330px;">
+                            <img src="/main/img/profile/default_image.png" alt="Profile Image" class="profile-image img-fluid rounded-circle" style="margin-bottom: 50px; margin-top: 50px; width: 330px; height: 330px;">
                         {% endif %}
                         <h2 style="margin-bottom: 10px;">{{ profiles.name }}</h2>
                         <p style="margin-bottom: 40px;">{{ profiles.email }}</p>
